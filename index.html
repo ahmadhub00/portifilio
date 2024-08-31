@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body>
+
+    <nav id="desktop-nav"> <!-- for desktop -->
+      <div class="logo">Prof.Dr Sofia Anwar</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <nav id="hamburger-nav">
+      <div class="logo">Prof.Dr Sofia Anwar</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+
+<section id="profile">
+     <div class="profile-pic-container">
+           <img src="./assets/profile-pic.jpeg" class="profile-pic" />
+     </div>
+     <div class="section__text">
+           <h1 class="title">Prof.Dr Sofia Anwar</h1>
+             <p class="section__text__p2">Professor of Economics</p>
+            <div class="btn-container">
+          
+              <button class="btn btn-color-2"
+            onclick="window.open('./assets/resume-example.pdf')">
+            Download CV
+          </button>
+          
+          <button class="btn btn-color-2" 
+          onclick="window.open('./assets/resume-example.pdf')">
+            Research Papers
+          </button>
+          <!-- <button class="btn btn-color-1" 
+          onclick="location.href='./#contact'">
+            Contact Info
+          </button> -->
+        </div>
+
+        <div id="socials-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="My LinkedIn profile"
+            class="icon"
+            onclick="location.href='https://linkedin.com/'"
+          />
+          <img
+            src="./assets/facebook.svg"
+            alt="My facebook profile"
+            class="icon"
+            onclick="location.href='https://facebook.com/'"
+          />
+          <img
+          src="./assets/researchgate.svg"
+          alt="My researchgate profile"
+          class="icon"
+          onclick="location.href='https://www.researchgate.net/profile/Sofia_Anwar'"
+        />
+        <img
+          src="./assets/CLVT.png"
+          alt="My clarivate profile"
+          class="icon"
+          onclick="location.href='https://www.webofscience.com/wos/author/record/AAL-6188-2020?state=%7B%7D'"
+        />
+        </div>
+      </div>
+    </section>
+
+<section id="about">
+              <p class="section__text__p1">Get To Know More</p>
+              <h1 class="title">About Me</h1>
+   <div class="section-container">
+       <div class="about-details-container">
+           <div class="about-containers">
+               <div class="details-container">
+                  <img
+                     src="./assets/experience.png"
+                     alt="Experience icon"
+                     class="icon"/>
+                  <h3>Experience</h3>
+                  <p>20 years <br />Teaching & Admistrative</p>
+               </div>
+
+               <div class="details-container">
+                   <img
+                      src="./assets/education.png"
+                      alt="Education icon"
+                      class="icon"/>
+                   <h3>Education</h3>
+                   <p>Masters in Economics<br />Phd in Economics</p>
+               </div>
+           </div>
+
+           <div class="text-container">
+                    <h4>
+                     Professor Dr Sofia Anwar is a distinguished scholar and educator in the field of Economics, currently serving as a Dean  at GC University Faislabad With over 20+ years of experience in academia, Prof.DR Sofia Anwar has made significant contributions towards Education, Research, Acedemia and earning a reputation as a leading authority in the field.
+                     Throughout their illustrious career, Prof.DR Sofia Anwar has published numerous groundbreaking research papers and books, influencing both peers and students alike. Their work has been recognized with several prestigious awards, highlighting their commitment to advancing knowledge and fostering innovation.
+                    </h4>
+           </div>
+        </div>
+      </div>
+     <!--  <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#experience'"
+      /> -->
+</section>
+
+<section id="experience">
+      <p class="section__text__p1">Explore My</p>
+      <h1 class="title">Experience</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <h2 class="experience-sub-title">Admistrative</h2>
+            <div class="article-container">
+            <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>VC GCWF</h3>
+                  <p>8 months Experience</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Director Advanced Studies</h3>
+                  <p>served for 3 years</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Member Sindicate</h3>
+                  <p>serverd 2 times</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Member Planing committee</h3>
+                  <p>3 years Experience</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Director Training</h3>
+                  <p>6 months experience</p>
+                </div>
+              </article>
+             
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Member Acdemic councel</h3>
+                  <p>serving from pst 6 years</p>
+                </div>
+              </article>
+            </div>
+          </div>
+          <div class="details-container">
+            <h2 class="experience-sub-title">Teaching</h2>
+            <div class="article-container">
+             
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Assistant Professor</h3>
+                  <p>University of Sargodha</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Associate Professor</h3>
+                  <p>GCUF</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>15 years of teaching phd</h3>
+                 
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3> Teached Overall 50 phd students</h3>
+                  
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+</section>
+   <!-- <section id="projects">
+      <p class="section__text__p1">Browse My Recent</p>
+      <h1 class="title">Projects</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project-1.png"
+                alt="Project 1"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Project One</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project-2.png"
+                alt="Project 2"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Project Two</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project-3.png"
+                alt="Project 3"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Project Three</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#contact'"
+      />
+    </section> -->
+<section id="contact">
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="./assets/email.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p><a href="">drsofiaeconomist@gmail.com</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="LinkedIn icon"
+            class="icon contact-icon"
+          />
+          <p><a href="https://www.linkedin.com">LinkedIn</a></p>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>Copyright  2023 Ahmad Taimur. All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>

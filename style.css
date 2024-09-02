@@ -154,7 +154,7 @@ section {
   margin: 0 10rem;
   box-sizing: border-box;
   min-height: fit-content;
-  outline: 1px solid red;
+
 }
 
 .section-container {
@@ -170,7 +170,7 @@ section {
   height: auto;
 }
 .profile-pic-container {
-  height: 400px;
+  height: 400%;
   width: 100%;
   margin: auto;           /* Center it if needed */
   aspect-ratio: 1;        /* Keeps it square */

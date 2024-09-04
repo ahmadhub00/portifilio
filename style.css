@@ -9,7 +9,28 @@
 
 body {
   font-family: "Poppins", sans-serif;
+  background-color: #ffffff;
+      color: #000000;
 }
+body.dark-mode {
+  background-color: #121212;
+  color: #eee;
+}
+
+button {
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  cursor: pointer;
+  border: none;
+  border-radius: 20px;
+  background-color: #333;
+  color: white;
+}
+body.dark-mode button {
+  background-color: #eee;
+  color: #111;
+}
+
 
 html {
   scroll-behavior: smooth;
@@ -18,6 +39,9 @@ html {
 p {
   color: rgb(85, 85, 85);
 }
+body.dark-mode p {
+  color: #ffffff;
+}
 
 /* TRANSITION */
 
@@ -25,6 +49,13 @@ a,
 .btn {
   transition: all 300ms ease;
 }
+h3 {
+  color: rgb(85, 85, 85);
+}
+body.dark-mode h3 {
+  color: #ffffff;
+}
+
 
 /* DESKTOP NAV */
 
@@ -46,10 +77,14 @@ nav {
 }
 
 a {
-  color: black;
+  color: rgb(0, 0, 0);
   text-decoration: none;
   text-decoration-color: white;
 }
+body.dark-mode a {
+  color: #ffffff;
+}
+
 
 a:hover {
   color: grey;
@@ -165,29 +200,41 @@ section {
 
 #profile {
   display: flex;
+   /* allows stacking on smaller screens */
+  align-items: center;
   justify-content: center;
   gap: 10rem;
   height: auto;
 }
 .profile-pic-container {
-  height: 400%;
-  width: 100%;
+  flex: 1 1 300px; 
+  max-width: 400px;
   margin: auto;           /* Center it if needed */
   aspect-ratio: 1;        /* Keeps it square */
   margin: auto;           /* Center it if needed */
   overflow: hidden;           /* Hides overflowed corners */
-  border-radius: 2rem;        /* Matches image rounding */
+  align-items: center;
+  justify-content: center;
+  border-radius: 2rem;
+  
 }
 .profile-pic {
   height: 100%;
   width: 100%;
   object-fit: cover;          /* Keeps the image neat inside */
-  display: block;             /* Removes unexpected spacing */
+  display: block;            /* Removes unexpected spacing */
+  border-radius: 2rem;          
 }
 
 .section__text {
+  justify-content: center;
+  align-items: center;
+  aspect-ratio: 1;
+  flex: 1 1 300px; 
   align-self: center;
   text-align: center;
+  max-width: 400px;
+  margin: auto;           /* Center it if needed */
 }
 
 .section__text p {
@@ -214,6 +261,8 @@ section {
 .icon {
   cursor: pointer;
   height: 2rem;
+  color:#ffffff;
+  
 }
 
 /* BUTTONS */
@@ -229,7 +278,8 @@ section {
   transition: all 300ms ease;
   padding: 1rem;
   width: 8rem;
-  border-radius: 2rem;
+  border-radius: 30rem;
+  color:#000000
 }
 
 .btn-color-1,
@@ -288,6 +338,7 @@ section {
   justify-content: center;
   flex-direction: column;
   display: flex;
+  
 }
 .about-containers {
   display: flex;
@@ -296,6 +347,10 @@ section {
   gap: 2rem;
   margin-bottom: 2rem;
   margin-top: 2rem;
+  background: white;
+}
+body.dark-mode .about-containers {
+  background: #121212;
 }
 .details-container {
   padding: 1.5rem;
@@ -306,6 +361,20 @@ section {
   border-color: rgb(163, 163, 163);
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
   text-align: center;
+}
+body.dark-mode .details-container {
+  background: #303030;
+  border-color: rgb(163, 163, 163);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+.details-container:hover {
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+  transform: translateY(-2px);
+  transition: all 300ms ease;
+}
+.details-container:hover .icon {
+  transform: scale(1.1);
+  transition: all 300ms ease;
 }
 .details-container .icon {
   height: 3rem;
@@ -340,7 +409,12 @@ section {
   display: flex;
   justify-content: center;
   flex-direction: column;
+  background: white;
 }
+body.dark-mode .experience-details-container {
+  background: #121212;
+}
+
 
 .article-container {
   display: flex;
@@ -442,4 +516,6 @@ footer p {
 .title {
   font-size: 3rem;
   text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
 }
